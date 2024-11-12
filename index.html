@@ -3,113 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LCBB-Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script>
-        // Clear Form Function
-        function clearForm() {
-            document.getElementById("googleFormReplica").reset();
-        }
-    </script>
-</head>
-<body class="font-sans leading-normal tracking-normal">
-    <!-- Header Section -->
-    <header class=" py-2 text-white text-center">
-        <img src="img/form-logo.png" alt="Header Image" class="mx-auto mb-4 w-full max-w-2xl  h-52 rounded-lg">
-    </header>
-
-    <!-- Form Container -->
-    <div class="container mx-auto py-2 px-4 max-w-2xl">
-        <form id="googleFormReplica">
-
-                <!-- Email -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h1 class="text-4xl font-bold text-black-800 mb-3">Customer Satisfaction Survey Form</h1>
-                <p class="text-md text-gray-700">We would love to hear your thoughts or feedback on how we can improve your experience! We only hope to continue serving you to your standards.
-                    <br><br>
-                    -Las Casas Filipinas de Acuzar</p>
-                <input type="email" class="w-full p-2 mt-5 border border-gray-300 rounded" placeholder="Enter your Email" required>
-            </div>
-
-            <!-- Check in  -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-md text-gray-800 mb-3">Check-in date</h2>
-                <input type="date" class="w-40 p-2 border border-gray-300 rounded" required>
-            </div>
-
-            <!-- Check out -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-md text-gray-800 mb-3">Check-out date</h2>
-                <input type="date" class="w-40 p-2 border border-gray-300 rounded" required>
-            </div>
-
-
-            <!-- Short Answer Card -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-md text-gray-800 mb-3">Name</h2>
-                <input type="text" class="w-full p-2 border border-gray-300 rounded" placeholder="Your answer" required>
-            </div>
-
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PL7SRVDW');
             
-
-            <!-- Checkboxes Card -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-md text-gray-800 mb-3">Age</h2>
-                <div class="flex flex-col space-y-2">
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2" required> 19 and below</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> 20-29</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> 30-39</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> 40-49</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> 50-59</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> 60 and above</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> I'd rather not say</label>
-                </div>
-            </div>
-
-            <!-- Checkboxes Card -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-md text-gray-800 mb-3">Gender</h2>
-                <div class="flex flex-col space-y-2">
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2" required> Male</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-2"> Female</label>
-                    <label class="text-md text-gray-800"><input type="checkbox" class="mr-3"> Other: <input type="text" class="mr-2 border-b-2 ml-2"> </label>
-                </div>
-            </div>
-            <!-- Multiple Choice Card -->
-                        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                            <h2 class="text-lg font-semibold text-gray-800 mb-3">Multiple Choice</h2>
-                            <div class="flex flex-col space-y-2">
-                                <label><input type="radio" name="multiple_choice" class="mr-2" required> Option 1</label>
-                                <label><input type="radio" name="multiple_choice" class="mr-2"> Option 2</label>
-                                <label><input type="radio" name="multiple_choice" class="mr-2"> Option 3</label>
-                            </div>
-                        </div>
-            <!-- Dropdown Card -->
-            <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
-                <h2 class="text-lg font-semibold text-gray-800 mb-3">Dropdown</h2>
-                <select class="w-full p-2 border border-gray-300 rounded" required>
-                    <option value="">Select an option</option>
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                </select>
-            </div>
-
-
-            <!-- Submit and Clear Buttons -->
-            <div class="text-center space-x-4 mt-8">
-                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition">
-                    Submit
-                </button>
-                <button type="button" onclick="clearForm()" class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-6 rounded-full transition">
-                    Clear Form
-                </button>
-            </div>
-        </form>
+        </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css">
+    <title>LCBB-Form Tracking</title>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL7SRVDW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="form">
+        <a href="https://forms.gle/AZ2VUg8ciLs9GAth6" target="_blank">LCBB Form</a>
     </div>
 </body>
 </html>
